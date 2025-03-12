@@ -7,11 +7,11 @@ aside {
     padding: 10px;
     background-color:white ;
     color: black;
-    text-align:right;
-img {
+    text-align:right;}
+main img {
     width: 200px;
     height: auto;
-}}
+}
 nav {
     background-color: darkblue;
     padding: 10px;
