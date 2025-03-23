@@ -17,7 +17,7 @@ main {
 }
 aside {
     position: relative;
-    width: 800px;
+    width: cover;
     margin: 0px;
     border: 5px;
     padding: 5px;
@@ -69,6 +69,7 @@ p {
     padding: 0px;
 }
 footer {
+    position: bottom;
     margin-top:15px;
     border-top: 1px solid var(--main-text-color); ;
     text-align: center;
