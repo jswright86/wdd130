@@ -34,7 +34,7 @@ aside img {
     height: auto;
     border: 1px solid var(--main-text-color);
     padding: 2px;
-    box-shadow: var(--box-shadow-color);
+    box-shadow: var(--main-bg-color);
     margin: 5px;
     float: right;
 
@@ -62,7 +62,7 @@ img {
     height: auto;
     border: 1px solid var(--main-text-color);
     padding: 2px;
-    box-shadow: var(--box-shadow-color);
+    box-shadow: var(--main-bg-color);
     
 }
 p {
