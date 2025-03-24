@@ -1,0 +1,60 @@
+
+:root {
+    --primary-color: #363636;
+    --secondary-color: #282d3c;
+    --accent1-color: #d9bc90;
+    --accent2-color: #e5e5e5;
+    
+}
+.roboto-bold {
+    font-family: impact, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+.hero {
+    position: relative;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+    font: impact;
+}
+.hero img {
+    width: 200px;
+    float:right;
+    height: auto;
+    border: 1px solid var(--accent2-color);
+    padding: 2px;
+    box-shadow: 5px 5px 5px var(--secondary-color);
+    margin: 5px;
+}
+.h1{
+    position: absolute;
+    
+  }
+.footer {
+    position: relative;
+    margin-top:15px;
+    border-top: 1px solid var(--accent2-color);
+    text-align: center;
+}
+nav {
+    background-color: var(--primary-color);
+    padding: 10px;
+    color: var(--accent1-color);
+}
+
+nav a {
+    color: var(--accent1-color);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: var(--accent1-color);
+    text-decoration: underline;
+}
