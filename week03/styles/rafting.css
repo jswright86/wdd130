@@ -41,7 +41,16 @@
     font: impact;
 }
 .hero img {
-    width: 200px;
+    width: 300px;
+    float:right;
+    height: auto;
+    border: 1px solid var(--accent2-color);
+    padding: 2px;
+    box-shadow: 5px 5px 5px var(--secondary-color);
+    margin: 5px;
+}
+.hero article img {
+    width: 100px;
     float:right;
     height: auto;
     border: 1px solid var(--accent2-color);
