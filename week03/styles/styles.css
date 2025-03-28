@@ -1,13 +1,22 @@
 :root {
-    --main-color: darkblue;
+    --main-color: rgb(25, 25, 141);
     --main-bg-color: white;
     --main-text-color: black;
     --box-shadow-color: gray;
+    --background-color: lightgray;
 }
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+.grid {
+    display: grid;
+    align-items: center;
 }
 main {
     max-width: 600px;
@@ -21,13 +30,14 @@ aside {
     margin: 0px;
     border: 5px;
     padding: 5px;
-    float: right;
-      
+    position: relative;   
+    background-color: var(--background-color);
+    
 }
 aside h2 {
    position: absolute;
-   top: 50px;
-    right: 150px;
+   top: 125px;
+    right: 50px;
 }
 aside img {
     width: auto;
@@ -37,24 +47,24 @@ aside img {
     box-shadow: var(--main-bg-color);
     margin: 5px;
     float: right;
-
-}
-main img {
-    float:right;
-    width: 150px;
-    height: auto;
 }
 nav {
-    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     padding: 10px;
 }
 nav a {
-    color: var(--main-bg-color);
     display: block;
+    text-decoration: none;
+    color: var(--main-bg-color);
     padding: 20px;
+    font-size: large;
+    font-weight: 700;
 }
 h1 {
     color: var(--main-color);
+    border-bottom: 1px solid var(--main-text-color);
 }
 img {
     float: right;
@@ -62,8 +72,7 @@ img {
     height: auto;
     border: 1px solid var(--main-text-color);
     padding: 2px;
-    box-shadow: var(--main-bg-color);
-    
+    box-shadow: var(--main-bg-color);    
 }
 p {
     padding: 0px;
@@ -78,6 +87,5 @@ footer {
     margin: 1rem;
     border: 1px solid var(--main-text-color);
     padding: 1rem;
-    background-color: var(--main-bg-color);
     color: var(--main-text-color);
 }
