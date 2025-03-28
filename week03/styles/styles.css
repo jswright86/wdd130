@@ -11,8 +11,8 @@
     box-sizing: border-box;
 }
 header, .grid, footer {
-    max-width: 840px;
     margin: 0 auto;
+    max-width: 840px;
 }
 .grid {
     display: grid;
@@ -44,12 +44,15 @@ ul.box {
       
     
 }
+
 aside {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     grid-column: 1/2;
     grid-row: 1/2;
     width: 20rem;
     margin: 0px;
-    border: 5px;
     padding: 5px;
     position: relative;   
     background-color: var(--background-color);
@@ -60,29 +63,25 @@ aside h2 {
    top: 125px;
     right: 50px;
 }
+
 aside img {
     width: auto;
     height: auto;
     border: 1px solid var(--main-text-color);
     padding: 2px;
-    box-shadow: var(--main-bg-color);
     margin: 5px;
-    float: right;
 }
 nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: var(--main-color);
+    background-color: var(--primary-color);
     padding: 10px;
 }
-nav a {
-    display: block;
-    text-decoration: none;
-    color: var(--main-bg-color);
-    padding: 20px;
-    font-size: large;
-    font-weight: 700;
+.container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 h1 {
     color: var(--main-color);
