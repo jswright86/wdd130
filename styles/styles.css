@@ -1,0 +1,84 @@
+:root {
+    --main-color: darkblue;
+    --main-bg-color: white;
+    --main-text-color: black;
+    --box-shadow-color: gray;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main {
+    max-width: 600px;
+    margin: 5px;
+    border: 5px;
+    padding: 5px;
+}
+aside {
+    position: relative;
+    width: cover;
+    margin: 0px;
+    border: 5px;
+    padding: 5px;
+    float: right;
+      
+}
+aside h2 {
+   position: absolute;
+   top:50px;
+    right: 150px;
+}
+aside img {
+    width: auto;
+    height: auto;
+    border: 1px solid var(--main-text-color);
+    padding: 2px;
+    box-shadow: var(--main-bg-color);
+    margin: 5px;
+    float: right;
+
+}
+main img {
+    float:right;
+    width: 150px;
+    height: auto;
+}
+nav {
+    background-color: var(--main-color);
+    padding: 10px;
+}
+nav a {
+    color: var(--main-bg-color);
+    display: block;
+    padding: 20px;
+}
+h1 {
+    color: var(--main-color);
+}
+img {
+    float: right;
+    width: 300px;
+    height: auto;
+    border: 1px solid var(--main-text-color);
+    padding: 2px;
+    box-shadow: var(--main-bg-color);
+    
+}
+p {
+    padding: 0px;
+}
+footer {
+    position: bottom;
+    margin-top:15px;
+    border-top: 1px solid var(--main-text-color); ;
+    text-align: center;
+}
+/*Class Selectors*/
+.box {
+    margin: 1rem;
+    border: 1px solid var(--main-text-color);
+    padding: 1rem;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+}
