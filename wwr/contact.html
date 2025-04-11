@@ -95,12 +95,14 @@
                         <fieldset>
                             <legend>Purpose of Your Message</legend>
                             <div class = "form-item column1">
-                            <label for ="purpose" >What are you reaching out about?</label>
-                            <select id="purpose" name="purpose">
-                                <option value="inquiry">General Inquiry</option>
-                                <option value="reservation">Reservation Question</option>
-                                <option value="suggestion">Website Suggestion</option>
-                            </select>
+                            <label>What are you reaching out about?</label>
+                            <input type="radio" id="inquiry" name="purpose" value="inquiry" checked>
+                            <label for="inquiry">General Inquiry</label>
+                            <input type="radio" id="reservation" name="purpose" value="reservation">
+                            <label for="reservation">Reservation Question</label>
+                            <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                            <label for="suggestion">Website Suggestion</label>
+                            <input type="radio" id="other" name="purpose" value="other">
                             </div>
                             <div class = "form-item column1">
                             <label for ="subscribe" >Please subscribe me to the monthly newsletter</label>

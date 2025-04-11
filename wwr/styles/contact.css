@@ -272,6 +272,7 @@ legend {
     margin-top: 10px;
 }
 label {
+    display: flex;
     text-align: right;
     padding-right: 10px;
     font-size: 1rem;
@@ -281,14 +282,14 @@ input, select, textarea {
     padding: 10px;
     font-size: 1.1rem;
 }
-input[type ="checkbox"]{
+input[type ="radio"] {
     width: 1.5rem;
     height: 1.5rem;
-    vertical-align: bottom;
+    
 }
 button {
     background-color:var(--accent2-color); 
-    color: var(--accent1-color);
+    color: var(--primary-color);
     padding: 10px 20px;
     border: 1px solid var(--accent2-color);
     border-radius: 5px;
@@ -298,7 +299,8 @@ button {
     justify-self: center;
 }
 button:hover {
-    background-color: var(--accent1-color);
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
 }
 footer {
     display: grid;
