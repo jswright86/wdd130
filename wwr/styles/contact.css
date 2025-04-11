@@ -282,6 +282,12 @@ input, select, textarea {
     padding: 10px;
     font-size: 1.1rem;
 }
+input#subscribe {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 10px;
+    margin-left: 10px;
+}
 input[type ="radio"] {
     width: 1.5rem;
     height: 1.5rem;
