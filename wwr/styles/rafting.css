@@ -4,6 +4,7 @@
     --secondary-color: #282d3c;
     --accent1-color: #d9bc90;
     --accent2-color: #e5e5e5;
+    
     margin: 15px var(--secondary-color);
     display: flex;
     justify-content: center;
@@ -139,10 +140,9 @@
     
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 1 / 3;
+    grid-template-rows: 33% 33% 33%;
     width: 80%;
     height: 60%;
-    background-color: none;
     grid-column: 3 / 6;
     grid-row: 4 / 6;
     justify-content: center;
@@ -248,7 +248,7 @@ form :nth-child(4) {
 .action {
     display: grid;
     grid-template-columns: 20% 20% 20%;
-    grid-template-rows: 20% 30% 30% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
     justify-self: center;
     justify-content: center;
     width: 2000px;
@@ -259,30 +259,46 @@ form :nth-child(4) {
 .action h2 {
     display: flex;
     justify-content: center;
-    align-self: top;
-    grid-column: 2 / 4;
+    
+    grid-column: 2;
     grid-row: 1;
     font-size: 3rem;
     color: var(--accent1-color);
     
 }
-.action p {
+
+    
+    
+
+.action :nth-child(5) {
     display: flex;
     justify-content: center;
     align-items:center;
     grid-column: 1;
-    grid-row: 3/ 5;
+    grid-row: 4 / 6;
     font-size: 1.7rem;
     color: var(--accent1-color);
-    width: 500px
+    width: 500px;
+    font-size: 1.5rem ;
+    
+}
+.action :nth-child(4) {
+    justify-self: center;
+    align-self:center;
+    grid-column: 2 / 4;
+    grid-row: 2;
+    font-size: 1.5rem;
+    color: var(--accent1-color);
+    width:90%;
     
     
 }
+
 .action img:nth-child(1) {
     width: 75%;
     height: auto;
     grid-column: 2 / 4;
-    grid-row: 2 / 5 ;   
+    grid-row: 3 / 6 ;   
     align-self: center;
     justify-self: end;
     border-radius: 20px;
@@ -296,7 +312,7 @@ form :nth-child(4) {
     align-self: center;
     grid-column: 1;
     
-    grid-row: 1 / 3;
+    grid-row: 2 / 4;
     font-size: 1.5rem;
     color: var(--accent1-color);
     height: auto    ;
