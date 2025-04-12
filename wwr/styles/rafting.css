@@ -86,38 +86,56 @@
     border-radius: 20px;
 }
 .hero {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%; 
+    grid-template-rows:  20% 20% 20% 20% 20%;
     position: relative;
     color: var(--accent2-color);
     text-align: center;
     padding: 20px;
     font-size: 1.5rem;
     }
+.hero h1 {
+    grid-column: 3 /6;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: var(--accent2-color);
+    margin-bottom: 2rem;
+    
+}
 .hero img {
-    width: 300px;
-    float:right;
+    width: 1300px;
+    display: flex;
+    justify-self: center;
     height: auto;
-    border: 1px solid var(--accent2-color);
-    padding: 2px;
+    border-radius: 20px;
+    border: 5px solid var(--accent2-color);
     box-shadow: 5px 5px 5px var(--secondary-color);
     margin: 5px;
+    grid-column: 1 / 6;
+    grid-row: 1 / 6 ;
 
 }
-.hero img:nth-child(2) {
-    width: 300px;
+.hero :nth-child(3) {
     float: left;
     height: auto;
-    border: 1px solid var(--accent2-color);
-    padding: 2px;
-    box-shadow: 5px 5px 5px var(--secondary-color);
+    width: 1000px;
+  
     margin: 5px;
 }
 article {
+    display: flex;
     display: grid;
     grid-template-columns: 20% 20% 20%;
-    grid-template-rows: 20% 60% 20%;
-    max-width: 1400px;
+    grid-template-rows: 20% 50% 30%;
+    justify-self: center;
     justify-content: center;
-    width: 1400px;
+    width: 2000px;
+    height: 700px;
+    margin-bottom:5rem;
 }
 article h2 {
     display: flex;
@@ -133,54 +151,66 @@ article p {
     display: flex;
     justify-content: center;
     align-items: center;
-    grid-column: 1 / 3;
-    grid-row: 2;
-    font-size: 1.5rem;
+    grid-column: 2 / 4;
+    grid-row: 3;
+    font-size: 1.7rem;
     color: var(--accent1-color);
     
-}
-
-
-article img {
-   
-    width: 200px;
-    height: auto;
-    grid-column: 3;
-    grid-row: 2;   
-    justify-self: center ;
-    justify-content: center;
-    align-items: center;
     
-    border: 1px solid var(--accent2-color);
-    padding: 2px;
-    box-shadow: 5px 5px 5px var(--secondary-color);
+}
+article img:nth-child(1) {
+    width: auto;
+    height: 100%;
+    grid-column: 2 / 4;
+    grid-row: 2;   
+    align-self: center;
+    justify-self: end;
+    border-radius: 20px;
+    border: 5px solid var(--accent2-color);
+    box-shadow: 5px 5px 5px var(--secondary-color);    
     margin: 5px;
 }
-.h1{
-    position: absolute;
-    
-  }
-  .history {
+article img:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    grid-column: 1;
+    align-self: end;
+    grid-row: 2 / 4;
+    font-size: 1.5rem;
+    color: var(--accent1-color);
+    height: 90%;
+    width: auto;
+    border-radius: 20px;
+    border: 5px solid var(--accent2-color);
+    box-shadow: 5px 5px 5px var(--secondary-color);    
+    margin: 5px;
+}
+  
+  
+.history {
     display: grid;
     align-self: center;
     justify-self: center;
     grid-template-columns: 30% 20% 30%;
     grid-template-rows: 20% 80%;
-    max-width: 1400px;
+   
     justify-content: center;
-    width: 1400px;
+    width: 1600px;
+    margin-bottom: 5rem;
       }
 .history img {
-    display: flex;
-    justify-content: center;
+    
+    justify-self: center;
     align-self:center;
     grid-column: 2;
     grid-row: 2;
     width: 100%;
-    height: auto;
-    border: 1px solid var(--accent2-color);
-    padding: 2px;
+    height: auto;    
     position: relative;
+    border-radius: 20px;
+    border: 5px solid var(--accent2-color);
+    box-shadow: 5px 5px 5px var(--secondary-color);
 }
 
 .history h1 {
@@ -199,10 +229,10 @@ article img {
     grid-row: 2;
     grid-column: 1;
     font-size: 1.5rem;
-    margin-right: 10px;
+    margin-right: 40px;
     color: var(--accent1-color);
     font-size: 1.5rem;
-    font-weight: 700;
+    text-align: right;
 }
 .history h3 {
     display: flex;
@@ -211,10 +241,10 @@ article img {
     grid-row: 2;
     grid-column: 3;
     font-size: 1.5rem;
-    margin-left: 10px;
+    margin-left: 40px;
     color: var(--accent1-color);
     font-size: 1.5rem;
-    font-weight: 700;
+    text-align: left;
 }
 .adventure {
     display: grid;
@@ -232,6 +262,8 @@ article img {
     grid-row: 1;
     font-size: 2rem;
     color: var(--accent1-color);
+    margin-bottom: 4rem;
+    
     
 }
 .adventure figure { 
@@ -240,41 +272,34 @@ article img {
     justify-content: center;
     justify-self: center;
     align-content:center;
-    align-self: center;
+    align-self: baseline;
     align-items: center;
-    position: relative
-   
-  
-    
-    
+    position: relative;
+    height: 150px; 
+    grid-row: 2; 
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .adventure img {
-    grid-column: 2;
-    grid-row: 2;
-    width: auto;
-    height:200px;
+    width: 225px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 20px;
+    border: 5px solid var(--accent2-color);
+    box-shadow: 5px 5px 5px var(--secondary-color);
     
 }
-.adventure img {
-    grid-column: 3;
-    grid-row: 2;
-    width: 2rem;
-    height:auto;
-    
-}
-.adventure img {
-    grid-column: 4;
-    grid-row: 2;
-    width: 100px;
-    height: auto;
-  
-    }
-.adventure img {
-    grid-column: 5;
-    grid-row: 2;
-    width: 100px;
-    height: auto;
-    
+.adventure figcaption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / 6;
+    grid-row: 3;
+    font-size: 1.5rem;
+    color: var(--accent1-color);
+    margin-top: 1rem;
 }
 footer {
     display: grid;
