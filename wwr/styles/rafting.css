@@ -4,7 +4,6 @@
     --secondary-color: #282d3c;
     --accent1-color: #d9bc90;
     --accent2-color: #e5e5e5;
-    
     margin: 15px var(--secondary-color);
     display: flex;
     justify-content: center;
@@ -585,7 +584,7 @@ table {
     margin-right: 10px;
     
 }
-form :nth-child(3) {
+.hero form :nth-child(3) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -596,7 +595,7 @@ form :nth-child(3) {
     margin-bottom: 1rem;
     
 }
-form :nth-child(4) {
+.hero form :nth-child(4) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -605,7 +604,7 @@ form :nth-child(4) {
     width: 100%;
     height: 100%;
     margin-bottom: 1rem;
-    width: 80%;
+    
    
 }
 .hero input {
@@ -801,7 +800,7 @@ article img:nth-child(2) {
     box-shadow: 5px 5px 5px var(--secondary-color);
 }
 
-.history h1 {
+.history h2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -810,7 +809,7 @@ article img:nth-child(2) {
     font-size: 2rem;
     color: var(--accent1-color);
 }
-.history h2 {
+.history h3{
     display: flex;
     justify-content: center;
     align-self: center; 
@@ -824,7 +823,7 @@ article img:nth-child(2) {
     width: 90%;
 
 }
-.history h3 {
+.history h4{
     display: flex;
     justify-content: center;
     align-self: center;
@@ -892,6 +891,245 @@ article img:nth-child(2) {
     color: var(--accent1-color);
     margin-top: 1rem;
 }
+.contact_us {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:10% 10% 10% 10% 10%
+    10% 40% ;
+    color: var(--accent2-color);
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+    height: 60rem;
+}
+.contact_us img{
+    justify-self: center;
+    align-self: center;
+    grid-column: 1;
+    grid-row: 6;
+    width: auto;
+    height: 60rem;
+}
+.contact_us img:nth-child(2) {
+    grid-column: 3;
+    grid-row: 6;
+}
+.contact_us h2 {
+    justify-self: center;
+    grid-column:2 ;
+    grid-row: 1;
+    font-size: 2rem;
+    color: var(--accent1-color);
+}
+.contact_us p:nth-child(3) {
+   justify-self: center;
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 1.5rem;
+    color: var(--accent1-color);
+    width:40rem;
+    height: 10rem;
+}
+.contact_us p:nth-child(4) {
+   justify-self: center;
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 1.5rem;
+    color: var(--accent1-color);
+    width:60rem;
+    
+}
+.contact_us p:nth-child(5) {
+   justify-self: center;
+    grid-column: 2;
+    grid-row: 3;
+    font-size: 1.5rem;
+    color: var(--accent1-color);
+    
+}
+.contact_us p:nth-child(6) {
+    justify-self: center;
+    grid-column: 2;
+    grid-row: 4;
+    font-size: 1.5rem;
+    color: var(--accent1-color);
+    
+}
+.contact_us p:nth-child(7) {
+    justify-self: center;
+    grid-column: 2;
+    grid-row: 5;
+    font-size: 1.5rem;
+    color: var(--accent1-color);
+    
+}
+.contact_us p:nth-child(8) {
+    justify-self: center;
+    grid-column: 2;
+    grid-row: 6;
+    font-size: 1.5rem;
+    color: var(--accent1-color);
+    
+}
+.contact_us iframe {
+    justify-self:center;
+    align-self: center;
+    grid-column: 2;
+    grid-row: 7;
+    width: 40rem;
+    height: 100%;
+    border-radius: 20px;
+    border: 3px solid var(--primary-color); /* Added contrasting border */
+}
+.team {
+    display:grid;
+    grid-template-columns:25% 25% 25% 25%;
+    grid-template-rows:10% 30% 60%;
+    
+}
+.team h2 {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    grid-column: 2 / 4;
+    grid-row: 1;
+    font-size: 2rem;
+    color: var(--accent1-color);
+    
+}
+.team  p {
+    justify-self: center;
+    grid-column: 2 / 4;
+    grid-row: 2;
+    font-size: 1.5rem;
+    color: var(--accent1-color);
+    text-align: center;
+    width: 60rem;
+    
+}
+ 
+.team figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 3;
+}
+.team figcaption {
+    display: flex;
+    justify-content: center;
+    margin-left: 2rem;
+    font-size: 1rem;
+    width: 150px;
+    height: auto;    
+}
+.team img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 5px solid var(--accent2-color);
+    box-shadow: 5px 5px 5px var(--secondary-color);
+}
+.team img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 5px solid var(--accent2-color);
+    box-shadow: 5px 5px 5px var(--secondary-color);
+}
+.team img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 5px solid var(--accent2-color);
+    box-shadow: 5px 5px 5px var(--secondary-color);
+}
+.contact_form form {
+    background-color: var(--secondary-color);
+}
+form {
+    max-width: 1200px;
+    margin-top:5rem; 
+    margin-bottom: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    border: 5px solid var(--accent2-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+}
+form section {
+    display: grid;
+    grid-gap: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 25px;
+}
+ 
+form fieldset {
+    display: grid;
+    grid-gap: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+form legend {
+    font-size: 1rem;    
+    margin-top: 10px;
+    font-size: 20px;
+}
+form text {
+    display: flex;
+    text-align: right;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 5px;   
+}
+form input, select, textarea {
+    padding: 10px;
+    font-size: 1.1rem;
+}
+form input#subscribe {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+form input[type ="radio"] {
+    width: 1.5rem;
+    height: 1.5rem;
+    
+}
+form textarea {
+    display: flex;    
+    justify-self: center;
+    width: 95%;
+    height: 100px;
+    resize: none;
+    padding: 10px;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+form button {
+    background-color:var(--accent2-color); 
+    color: var(--primary-color);
+    padding: 10px 20px;
+    border: 1px solid var(--accent2-color);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    justify-self: center;
+}
+form button:hover {
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+}
+
 footer {
     display: grid;
     grid-template-columns:85% 5% 5% 5%;
@@ -912,8 +1150,6 @@ footer p {
     grid-column: 1;
     grid-row: 1;
     display: flex;
-    
-    
     
 }
 footer a{
