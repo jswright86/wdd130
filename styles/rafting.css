@@ -4,32 +4,25 @@
     --secondary-color: #282d3c;
     --accent1-color: #d9bc90;
     --accent2-color: #e5e5e5;
-    margin: 15px var(--secondary-color);
+    margin: 15px;
     display: flex;
     justify-content: center;
     
     
 }
-.roboto-bold {
-    font-family: impact, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-  }
-  
-.nunito-sans-uniquifier {
+
+.nunito-sans-uniquifier{
     font-family: "Nunito Sans", sans-serif;
+    font-weight: 100;
     font-style: normal;
-    font-variation-settings:
-      "wdth" 100,
-      "YTLC" 500;
-  }
+}
+.roboto-uniquifier {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
   
-.quicksand-uniquifier {
-    font-family: "Quicksand", sans-serif;
-    font-style: normal;
-  }
+
   header {
         
         display: grid;
