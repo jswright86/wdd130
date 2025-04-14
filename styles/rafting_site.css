@@ -724,7 +724,7 @@ article {
     height: 700px;
     margin-bottom:5rem;
 }
-article h2 {
+article h2{
     display: flex;
     justify-content: center;
     align-items: center;
