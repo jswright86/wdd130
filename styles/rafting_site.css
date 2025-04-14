@@ -96,7 +96,7 @@
     font-size: 1.5rem;
 
 }
-.main_salmon h1 {
+.main_salmon h2 {
     position: absolute;
     grid-column: 3 /6;
     grid-row: 1 / 2;
@@ -488,7 +488,7 @@ table {
     
     
     }
-.hero h1 {
+.hero h2 {
     position: absolute;
     grid-column: 3 /6;
     grid-row: 1 / 2;
