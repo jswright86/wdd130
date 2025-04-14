@@ -96,7 +96,7 @@
     font-size: 1.5rem;
 
 }
-.main_salmon h1 {
+.main_salmon h2 {
     position: absolute;
     grid-column: 3 /6;
     grid-row: 1 / 2;
@@ -488,7 +488,7 @@ table {
     
     
     }
-.hero h1 {
+.hero h2 {
     position: absolute;
     grid-column: 3 /6;
     grid-row: 1 / 2;
@@ -552,7 +552,7 @@ table {
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }    
-.hero form h2 {
+.hero form h3 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -724,7 +724,7 @@ article {
     height: 700px;
     margin-bottom:5rem;
 }
-article h2 {
+article h2{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -893,7 +893,7 @@ article img:nth-child(2) {
 }
 .contact_us {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 15% 70% 15%;
     grid-template-rows:10% 10% 10% 10% 10%
     10% 40% ;
     color: var(--accent2-color);
@@ -971,16 +971,18 @@ article img:nth-child(2) {
     color: var(--accent1-color);
     
 }
-.contact_us iframe {
-    justify-self:center;
-    align-self: center;
+.contact_us .map-container {
+    justify-self: center;
+    align-self: center; 
     grid-column: 2;
     grid-row: 7;
-    width: 40rem;
-    height: 100%;
-    border-radius: 20px;
-    border: 3px solid var(--primary-color); /* Added contrasting border */
+    font-size: 1.5rem;
+    color: var(--accent1-color);
+     
+   
+    
 }
+    
 .team {
     display:grid;
     grid-template-columns:25% 25% 25% 25%;
