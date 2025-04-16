@@ -617,17 +617,9 @@ table {
     margin-bottom: 1rem;
     gap: 50px;
     
-}
-.hero form :nth-child(5) input {
-    display: flex;
-    justify-content: flex-end;
-    align-self: center;
-    width:20%;
-    height: 20%;
-    margin-bottom: 1rem;
-    
     
 }
+
 .hero input {
     display: flex;
     

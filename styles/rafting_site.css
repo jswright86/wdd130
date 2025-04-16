@@ -608,22 +608,25 @@ table {
 }
 .hero form :nth-child(5) {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    justify-self: center;
     grid-column: 1  ;
     grid-row: 1;
     width: 100%;
     height: 100%;
     margin-bottom: 1rem;
+    gap: 50px;
+    
     
 }
+
 .hero input {
     display: flex;
     
     width: 100%;
     height: 100%;
     
-    justify-self: center;
+   
     height: auto;
     border-radius: 20px;
     border: 5px solid var(--accent2-color);
@@ -632,6 +635,8 @@ table {
     margin-bottom: 1rem;
     
 }
+
+
 .hero img {
     width: 100%;
     display: flex;
@@ -644,7 +649,7 @@ table {
     grid-column: 1 / 6;
     grid-row: 1 / 6 ;
     float:right
-    posi
+    
 
 }
 .action {
